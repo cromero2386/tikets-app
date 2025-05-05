@@ -12,3 +12,13 @@ Se detalla todas las variables necesarias para la conección
 -   DB_DATABASE= (Nombre de la base de datos).
 -   DB_USERNAME= (Usuario para conectarse a la base de datos).
 -   DB_PASSWORD= (Contraseña, si el usuario se le puso contraseña en caso contrario se deja vacio).
+
+## Tablas de Base de Datos
+
+-   provincias
+-   roles
+-   usuarios
+-   tickets
+-   estados
+-   estados_ticket
+-   comentarios_ticket
