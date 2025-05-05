@@ -12,7 +12,8 @@ class ProvinciaController extends Controller
      */
     public function index()
     {
-        //
+        $provincias = Provincia::all();
+        return response()->json($provincias);
     }
 
     /**
