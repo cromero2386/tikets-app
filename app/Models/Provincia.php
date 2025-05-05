@@ -34,4 +34,9 @@ class Provincia extends Model
         'nombre',
         'codigo'
     ];
+
+    public function users()
+    {
+        return $this->hasMany(User::class, 'provincia_id', 'id');
+    }
 }
