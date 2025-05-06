@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('tikets', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 100);
+            $table->text('descripcion');
+            $table->unsignedBigInteger('provincia_id');
             $table->timestamps();
         });
     }
