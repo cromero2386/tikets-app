@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use PHPUnit\Framework\Attributes\Ticket;
 
 class Provincia extends Model
 {
@@ -34,4 +35,14 @@ class Provincia extends Model
         'nombre',
         'codigo'
     ];
+
+    public function users()
+    {
+        return $this->hasMany(User::class, 'provincia_id', 'id');
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class, 'provincia_id', 'id');
+    }
 }
