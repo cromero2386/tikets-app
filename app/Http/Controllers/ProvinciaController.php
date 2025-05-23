@@ -25,6 +25,10 @@ class ProvinciaController extends Controller
         return response()->json($provincias);
     }
 
+    public function getProvinciasTicket()
+    {
+    }
+
     /**
      * Show the form for creating a new resource.
      */

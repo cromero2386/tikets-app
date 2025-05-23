@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Tiket;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Cache\Store;
+use App\Http\Requests\StoreTicketRequest;
 
 class TiketController extends Controller
 {
@@ -39,7 +41,7 @@ class TiketController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTicketRequest $request)
     {
         $ticket = Tiket::create([
             'nombre' => $request->nombre,
